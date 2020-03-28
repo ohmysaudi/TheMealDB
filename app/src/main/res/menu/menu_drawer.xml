@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_recipes"
+            android:checked="true"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Recipes" />-->
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Category" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favorites" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_random"
+            android:icon="@drawable/ic_all_inclusive_black_24dp"
+            android:title="Random" />
+    </group>
+    <item android:title="Others">
+        <menu
+            android:id="@+id/group_3"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_tag_faces_black_24dp"
+                android:title="Rate" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_web_asset_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+</menu>
