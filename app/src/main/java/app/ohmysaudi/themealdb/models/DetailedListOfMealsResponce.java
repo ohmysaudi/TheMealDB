@@ -4,7 +4,7 @@ import java.util.List;
 
 public class DetailedListOfMealsResponce {
 
-    private List<Meal> meals;
+    private final List<Meal> meals;
 
     public DetailedListOfMealsResponce(List<Meal> meals) {
         this.meals = meals;

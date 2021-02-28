@@ -117,9 +117,9 @@ public class CategoryFragment extends Fragment {
     * */
     public static class CategoriesRecyclerViewAdapter extends RecyclerView.Adapter<CategoriesRecyclerViewAdapter.MyViewHolder>  {
 
-        private List<Category> categories;
-        private Context context;
-        private CategoriesItemClickListener listener;
+        private final List<Category> categories;
+        private final Context context;
+        private final CategoriesItemClickListener listener;
 
         public CategoriesRecyclerViewAdapter(Context context, List<Category> categories, CategoriesItemClickListener listener) {
             this.context = context;
@@ -180,10 +180,10 @@ public class CategoryFragment extends Fragment {
          * */
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            private ImageView categoryImage;
-            private TextView categoryTitle;
-            private TextView categoryDescription;
-            private ProgressBar progressBar;
+            private final ImageView categoryImage;
+            private final TextView categoryTitle;
+            private final TextView categoryDescription;
+            private final ProgressBar progressBar;
 
             public MyViewHolder(View view) {
                 super(view);
@@ -197,7 +197,7 @@ public class CategoryFragment extends Fragment {
         // Listener
 
         public interface CategoriesItemClickListener {
-            public void onItemClick(View v, int position);
+            void onItemClick(View v, int position);
         }
 
 

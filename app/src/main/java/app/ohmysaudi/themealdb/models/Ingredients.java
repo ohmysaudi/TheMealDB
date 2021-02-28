@@ -1,8 +1,8 @@
 package app.ohmysaudi.themealdb.models;
 
 public class Ingredients {
-    private String ingrTitle;
-    private String ingrImage;
+    private final String ingrTitle;
+    private final String ingrImage;
 
     public Ingredients(String ingrTitle, String ingrImage) {
         this.ingrTitle = ingrTitle;

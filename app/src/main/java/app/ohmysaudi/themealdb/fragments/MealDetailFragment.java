@@ -433,9 +433,9 @@ public class MealDetailFragment extends Fragment {
     public static class IngredientRecyclerViewAdapter
             extends RecyclerView.Adapter<IngredientRecyclerViewAdapter.MyViewHolder> {
 
-        private List<Ingredients> ingredients;
-        private Context context;
-        private IngredientsItemClickListener listener;
+        private final List<Ingredients> ingredients;
+        private final Context context;
+        private final IngredientsItemClickListener listener;
 
         public IngredientRecyclerViewAdapter(List<Ingredients> ingredients, Context context, IngredientsItemClickListener listener) {
             this.ingredients = ingredients;
@@ -490,9 +490,9 @@ public class MealDetailFragment extends Fragment {
          * */
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            private ImageView ingrImage;
-            private TextView ingrTitle;
-            private ProgressBar progressBar;
+            private final ImageView ingrImage;
+            private final TextView ingrTitle;
+            private final ProgressBar progressBar;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -506,7 +506,7 @@ public class MealDetailFragment extends Fragment {
         // Ingredient Click Listener
 
         public interface IngredientsItemClickListener {
-            public void onItemClick(View v, int position);
+            void onItemClick(View v, int position);
         }
     }
 
@@ -520,9 +520,9 @@ public class MealDetailFragment extends Fragment {
 
     public class MeasuringRecyclerViewAdapter
             extends RecyclerView.Adapter<MeasuringRecyclerViewAdapter.MyViewHolder> {
-        private Context context;
-        private List<String> measures;
-        private List<Ingredients> ingredients;
+        private final Context context;
+        private final List<String> measures;
+        private final List<Ingredients> ingredients;
 
         public MeasuringRecyclerViewAdapter(Context context, List<String> measures, List<Ingredients> ingredients) {
             this.context = context;
@@ -559,7 +559,7 @@ public class MealDetailFragment extends Fragment {
          *  Custom View Holder
          * */
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            private TextView measuringText;
+            private final TextView measuringText;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);

@@ -222,9 +222,9 @@ public class RecipeFragment extends Fragment {
     * */
 
     public static class MealsRecyclerViewAdapter extends RecyclerView.Adapter<MealsRecyclerViewAdapter.MyViewHolder>{
-        private List<ListItemLink> listItemLinks;
-        private Context context;
-        private MealsItemClickListener listener;
+        private final List<ListItemLink> listItemLinks;
+        private final Context context;
+        private final MealsItemClickListener listener;
 
         public MealsRecyclerViewAdapter(Context context, List<ListItemLink> listItemLinks, MealsItemClickListener listener) {
             this.context = context;
@@ -278,9 +278,9 @@ public class RecipeFragment extends Fragment {
         ////////////////////////////
         // Custome View Holder Starts here.
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            private ImageView itemImage;
-            private TextView itemTitle;
-            private ProgressBar progressBar;
+            private final ImageView itemImage;
+            private final TextView itemTitle;
+            private final ProgressBar progressBar;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -294,7 +294,7 @@ public class RecipeFragment extends Fragment {
         // Meals Item Click Listnener
 
         public interface MealsItemClickListener {
-            public void onItemClick(View v, int position);
+            void onItemClick(View v, int position);
         }
 
     }
